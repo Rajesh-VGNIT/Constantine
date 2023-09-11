@@ -281,9 +281,9 @@ a:focus {
     box-shadow: none;
   }
 
-  .nav-bar .btn {
+  /* .nav-bar .btn {
     display: none;
-  }
+  } */
   .top-bar .top-bar-right {
     display: none;
   }
