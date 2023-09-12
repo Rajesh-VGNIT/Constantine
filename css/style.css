@@ -1195,11 +1195,20 @@ a:focus {
 .blog .pagination .page-link:hover,
 .blog .pagination .page-item.active .page-link {
   color: var(--heaven);
-  background: var(--primary);
+  background: var(--background);
 }
 
 .blog .pagination .disabled .page-link {
   color: #999999;
+}
+
+.blog .pagination .page-item .page-link {
+  color: var(--heaven);
+  background: var(--primary);
+}
+.blog .pagination .page-item .page-link:hover {
+  color: var(--heaven);
+  background: var(--background);
 }
 
 /*******************************/
@@ -1662,6 +1671,12 @@ a:focus {
   border: 2px solid var(--primary);
   transition: 0.3s;
 }
+.form-group input{
+  border: 2px solid var(--primary);
+}
+.form-group textarea{
+  border: 2px solid var(--primary);
+}
 
 .newsletter .btn:hover {
   color: var(--heaven);
@@ -1946,6 +1961,19 @@ a:focus {
   border: 2px solid var(--primary);
   background-color: var(--primary);
   text-align: center;
+}
+
+
+/* =============Careers Css================== */
+.career h1{
+  font-size: 50px;
+}
+.carrer1 img{
+  max-width: 100%;
+}
+.career .blue{
+  color: var(--primary);
+  font-weight: 500;
 }
 
 
