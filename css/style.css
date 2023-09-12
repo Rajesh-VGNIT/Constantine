@@ -448,6 +448,21 @@ a:focus {
 .carousel .carousel-caption {
   top: 4rem;
 }
+.appointment_area .appointment_info h3 {
+  font-size: 24px !important;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+.appointment_area form input {
+  height: 30px !important;
+}
+.appointment_area form textarea {
+  height: 50px !important;
+}
+.appointment_area form .appoinment_button button {
+ padding: 10px 0px 10px 0px !important;
+ margin-top: -1rem !important;
+}
 }
 
 
