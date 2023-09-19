@@ -474,12 +474,18 @@ a:focus {
   margin-bottom: 45px;
   padding: 90px 0;
   text-align: center;
-  background: var(--primary);
+  /* background: var(--primary); */
+  background: url(/img/carousel-11.jpg);
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-clip: var(--secondary);
+  background-size: cover;
 }
 
 .page-header h2 {
   position: relative;
-  color: var(--heaven);
+  color:#fff;
+  /* color: var(--primary); */
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -500,6 +506,7 @@ a:focus {
   position: relative;
   padding: 0 12px;
   font-size: 22px;
+  /* color: black; */
   color: var(--heaven);
 }
 
@@ -555,6 +562,23 @@ a:focus {
   .section-header h2 {
     font-size: 23px;
   }
+  .wrapper iframe{
+    width: 30%;
+    height: 250px;
+  }
+}
+@media (max-width: 320px) {
+  .section-header h2 {
+    font-size: 23px;
+  }
+  .wrapper1 img{
+    width: 100%;
+    height: 220px !important;
+  }
+  .hermove-banner img {
+    width: 100%;
+    height: 154px;
+}
 }
 
 /*******************************/
@@ -1979,6 +2003,7 @@ a:focus {
 }
 
 
+
 /* =============Careers Css================== */
 .career h1{
   font-size: 50px;
@@ -1989,6 +2014,37 @@ a:focus {
 .career .blue{
   color: var(--primary);
   font-weight: 500;
+}
+
+.hermove-banner img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* object-fit: cover; */
+  width: 100%;
+  height: 250px;
+}
+.wrapper1 img{
+  width: 100%;
+  height: 550px;
+}
+
+
+/* =======================Terms&condition======================== */
+.active.link-secondary{
+  font-weight: bold;
+  color:#fff;
+}
+.condition-tab p{
+  line-height: 30px;
+}
+.condition-tab li{
+  line-height: 40px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #6699ff;
+  background-color: #fff;
+  font-weight: 500;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
 
 
