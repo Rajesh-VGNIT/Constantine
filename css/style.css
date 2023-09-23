@@ -155,7 +155,7 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
+  width: 40px;
   height: 100%;
   font-size: 22px;
   color: var(--secondary);
@@ -579,7 +579,14 @@ a:focus {
     width: 100%;
     height: 154px;
 }
+.auto_hed{
+ font-size: 30px;
 }
+}
+.fglktl img{
+  width: 100%;
+}
+
 
 /*******************************/
 /******** Top Feature CSS ******/
@@ -2046,5 +2053,338 @@ a:focus {
   font-weight: 500;
   border-color: #dee2e6 #dee2e6 #fff;
 }
+
+/* ===================publication css===================== */
+
+.title2 p {
+color:#fff;
+}
+
+
+.intro {
+font-size:16px;
+max-width:500px;
+margin:0 auto;
+}
+.intro p {
+margin-bottom:0;
+}
+
+.people2 {
+padding:50px 0;
+cursor: pointer;
+}
+.item2 {
+margin-bottom:30px;
+}
+
+.item2 .box2 {
+text-align:center;
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+height:200px;
+position:relative;
+overflow:hidden;
+}
+
+.box2 .cover2 {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color:rgba(31,148,255,0.75);
+transition:opacity 0.15s ease-in;
+opacity:0;
+padding: 40px 20px;
+text-align: center;
+color:#fff;
+text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.box2:hover .cover2 {
+opacity:1;
+}
+
+.item2 .name2 {
+font-weight:bold;
+font-size: 16px;
+margin-bottom:8px;
+}
+
+.item2 .title2 {
+text-transform:uppercase;
+font-weight:bold;
+color:#bbd8fb;
+letter-spacing:2px;
+font-size:12px;
+margin-bottom:20px;
+}
+.item2 .title2{
+  color: #fff;
+}
+.public{
+  background-color: #fff;
+  border: 2px solid #6699ff;
+  padding: 8px 10px;
+  color: #6699ff;
+}
+.public:hover{
+  color:#fff ;
+  border: 2px solid #6699ff;
+  background-color: #6699ff;
+}
+
+
+
+/* ==============dorpdown css================= */
+ .mega-menu {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  top: 65px;
+  border-top: 1px solid #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-out 0s, visibility 0.1s linear 0s;
+}
+.mega-menu .content {
+  background: #e9ecef;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  -webkit-box-shadow: 0 20px 50px 0 rgb(0 0 0 / 5%);
+  box-shadow: 0 20px 50px 0 rgb(0 0 0 / 5%);
+}
+.blog .content {
+  grid-template-columns: repeat(4, 1fr);
+}
+.content .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 3rem;
+}
+
+.content .col .img-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 20vw;
+  overflow: hidden;
+}
+
+.content .col .img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.content .col img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.content .col .img-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+.content .col .menu-title {
+  color: #ff5722;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+.content .col p {
+  line-height: 1.2rem;
+  margin-top: 5px;
+  color: #112f48;
+}
+
+.content .col .mega-links {
+  border-left: 1px solid #3c3c3c;
+}
+
+.content .col .read-more {
+  font-size: 16px;
+  display: flex;
+  padding-top: 1rem;
+  color: #03a9f4;
+  transition: color 0.3s ease;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.col .mega-links li,
+.col .mega-links li a {
+  padding: 0 1rem;
+}
+.menu-items li:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-items li:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content .col .read-more:hover {
+  color: #ff5722;
+}
+
+.publication_button{
+  display: flex;
+  margin: auto;
+  padding: 8px 15px;
+  border: 2px solid #03a9f4;
+  background-color: #fff;
+  color: #03a9f4;
+}
+.publication_button:hover{
+  background-color: #03a9f4;
+  color: #fff;
+  border:2px solid #03a9f4;
+}
+
+
+
+/* ====================Slider===================== */
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  /* border-radius: 25px; */
+}
+.card{
+  /* border-radius: 25px; */
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070F4;
+  /* border-radius: 25px 25px 0 25px; */
+}
+
+/* .swiper-slide{
+  width: 250px !important;
+} */
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  /* border-radius: 6px; */
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #265DF2;
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
 
 
