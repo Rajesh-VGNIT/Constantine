@@ -2502,4 +2502,21 @@ body{
 }
 
 }
+@media (max-width: 375px) {
+  .mega_menu {
+    width: 100%;
+    margin-left: -7.1rem !important;
+   
+  }
+  .mega_menu ul li .sub_menu{
+    display: block;
+    width: 222px !important;
+    top: 43px;
+    height: auto;
+  }
+  .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+   overflow: auto;
+}
+
+}
 
