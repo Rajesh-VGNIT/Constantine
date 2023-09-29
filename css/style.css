@@ -239,6 +239,11 @@ ul{
 .nav-bar .dropdown-menu a:hover{
   color: var(--primary);
 }
+.dropdown-item.active, .dropdown-item:active {
+  color: var(--primary);
+  text-decoration: none;
+  background-color: #fff;
+}
 
 .nav-bar .btn {
   color: #ffffff;
