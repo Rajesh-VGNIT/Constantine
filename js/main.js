@@ -139,3 +139,12 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".dropdown.1").click(function(){
+         document.querySelector(".dropdown-content.1").toggle();
+     });
+    
+ });
+

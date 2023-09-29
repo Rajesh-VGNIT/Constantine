@@ -1,0 +1,559 @@
+
+
+$('document').ready(function() {
+
+    var base_url = window.location.protocol + "//" + window.location.host + "/";
+
+    var aboutpg_url = base_url + "about";
+
+    var recogpg_url = base_url + "recognition";
+
+    var peoplepg_url = base_url + "people";
+
+    var expertisepg_url = base_url + "expertise";
+
+
+    var automotivepg_url = base_url + "expertise/automotive";
+    var briberypg_url = base_url + "expertise/anti-bribery-anti-corruption";
+    var bankingpg_url = base_url + "expertise/banking-finance";
+    var capitalpg_url = base_url + "expertise/capital-markets--international-offerings";
+    var competitionpg_url = base_url + "expertise/competition-law";
+    var corporatepg_url = base_url + "expertise/corporate--commercial";
+    //var directtaxpg_url = base_url + "expertise/direct-tax";
+    var directtaxpg_url = base_url + "expertise/tax";
+
+    var educationpg_url = base_url + "expertise/education";
+    var employmentpg_url = base_url + "expertise/employment-law";
+    var energypg_url = base_url + "expertise/energy-infrastructure--natural-resources";
+    var financialpg_url = base_url + "expertise/financial-services";
+    var fundformationpg_url = base_url + "expertise/fund-formation";
+    var govtregulatorypg_url = base_url + "expertise/government--regulatory";
+    var hospitalitypg_url = base_url + "expertise/hospitality";
+
+
+    var insolvencypg_url = base_url + "expertise/insolvency-restructuring";
+    var insurancepg_url = base_url + "expertise/insurance";
+    var intellectualpg_url = base_url + "expertise/intellectual-property";
+    var internationalpg_url = base_url + "expertise/international-practice-group";
+    var litigationpg_url = base_url + "expertise/dispute-resolution";
+    var manufacturingpg_url = base_url + "expertise/manufacturing";
+    var mergerspg_url = base_url + "expertise/mergers--acquisitions";
+
+
+    var nuclearpg_url = base_url + "expertise/nuclear-law";
+    var privateclientpg_url = base_url + "expertise/private-client";
+    var privateequitypg_url = base_url + "expertise/private-equity-venture-capital-and-fund-investment";
+    var projectspg_url = base_url + "expertise/projects--project-finance";
+    var realestatepg_url = base_url + "expertise/real-estate";
+    var renewablepg_url = base_url + "expertise/renewable-energy";
+    var technologypg_url = base_url + "expertise/technology-media--telecommunications";
+
+
+
+
+
+	var mediapg_url = base_url + "media";
+
+	
+	if (document.cookie.indexOf('disclaimer') === -1 ){
+        //alert(1);
+
+       
+        $(".aboutnav").html('<a class="aboutnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>about</div></a>');
+		$(".recognav").html('<a class="recognav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>recognition</div></a>');
+        $(".peoplenav").html('<a class="peoplenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>People</div></a>');
+        $(".expertisenav").html('<a class="expertisenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Practice Areas</div></a>');
+
+
+        $(".automotivenav").html('<a class="automotivenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Automotive</div></a>');
+        $(".briberynav").html('<a class="briberynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Anti-Bribery &amp; Anti-Corruption</div></a>');
+        $(".bankingnav").html('<a class="bankingnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Banking &amp; Finance</div></a>');
+        $(".capitalnav").html('<a class="capitalnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Capital Markets &amp; International Offerings</div></a>');
+        $(".competitionnav").html('<a class="competitionnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Competition Law</div></a>');
+        $(".corporatenav").html('<a class="corporatenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Corporate &amp; Commercial</div></a>');
+        $(".directtaxnav").html('<a class="directtaxnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Tax</div></a>');
+
+        $(".educationnav").html('<a class="educationnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Education</div></a>');
+        $(".employmentnav").html('<a class="employmentnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Employment Law</div></a>');
+        $(".energynav").html('<a class="energynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Energy, Infrastructure &amp; Natural Resources</div></a>');
+        $(".financialnav").html('<a class="financialnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Financial Services</div></a>');
+        $(".fundformationnav").html('<a class="fundformationnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Fund Formation</div></a>');
+        $(".govtregulatorynav").html('<a class="govtregulatorynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Government &amp; Regulatory</div></a>');
+        $(".hospitalitynav").html('<a class="hospitalitynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Hospitality</div></a>');
+
+        $(".insolvencynav").html('<a class="insolvencynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Insolvency &amp; Restructuring</div></a>');
+        $(".insurancenav").html('<a class="insurancenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Insurance</div></a>');
+        $(".intellectualnav").html('<a class="intellectualnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Intellectual Property</div></a>');
+        $(".internationalnav").html('<a class="internationalnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>International Practice Group</div></a>');
+        $(".litigationnav").html('<a class="litigationnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Dispute Resolution</div></a>');
+        $(".manufacturingnav").html('<a class="manufacturingnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Manufacturing</div></a>');
+        $(".mergersnav").html('<a class="mergersnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Mergers &amp; Acquisitions</div></a>');
+
+        $(".nuclearnav").html('<a class="nuclearnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Nuclear Law</div></a>');
+        $(".privateclientnav").html('<a class="privateclientnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Private Client</div></a>');
+        $(".privateequitynav").html('<a class="privateequitynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Private Equity, Venture Capital &amp; Fund Investment</div></a>');
+        $(".projectsnav").html('<a class="projectsnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Projects &amp; Project Finance</div></a>');
+        $(".realestatenav").html('<a class="realestatenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Real Estate</div></a>');
+        $(".renewablenav").html('<a class="renewablenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Renewable Energy</div></a>');
+        $(".technologynav").html('<a class="technologynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Technology, Media &amp; Telecommunications</div></a>');
+
+
+
+
+		$(".medianav").html('<a class="medianav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Media</div></a>');
+
+	}
+	else{
+
+        
+
+		if($.cookie('disclaimer') === 'agree') {		
+
+			//alert(2);
+
+			$.cookie("disclaimer", "agree", {
+
+				expires: 1,
+
+				path: '/'
+
+			});
+
+			
+
+			$(".aboutnav").html('<a href="' + aboutpg_url + '"><div>about</div></a>');
+
+			$(".recognav").html('<a href="' + recogpg_url + '"><div>recognition</div></a>');
+
+			$(".peoplenav").html('<a href="' + peoplepg_url + '"><div>People</div></a>');
+
+			$(".expertisenav").html('<a href="' + expertisepg_url + '"><div>Practice Areas</div></a>');
+
+
+            $(".automotivenav").html('<a href="' + automotivepg_url + '"><div>Automotive</div></a>');
+            $(".briberynav").html('<a href="' + briberypg_url + '"><div>Anti-Bribery &amp; Anti-Corruption</div></a>');
+            $(".bankingnav").html('<a href="' + bankingpg_url + '"><div>Banking &amp; Finance</div></a>');
+            $(".capitalnav").html('<a href="' + capitalpg_url + '"><div>Capital Markets &amp; International Offerings</div></a>');
+            $(".competitionnav").html('<a href="' + competitionpg_url + '"><div>Competition Law</div></a>');
+            $(".corporatenav").html('<a href="' + corporatepg_url + '"><div>Corporate &amp; Commercial</div></a>');
+            $(".directtaxnav").html('<a href="' + directtaxpg_url + '"><div>Tax</div></a>');
+
+
+            $(".educationnav").html('<a href="' + educationpg_url + '"><div>Education</div></a>');
+            $(".employmentnav").html('<a href="' + employmentpg_url + '"><div>Employment Law</div></a>');
+            $(".energynav").html('<a href="' + energypg_url + '"><div>Energy, Infrastructure &amp; Natural Resources</div></a>');
+            $(".financialnav").html('<a href="' + financialpg_url + '"><div>Financial Services</div></a>');
+            $(".fundformationnav").html('<a href="' + fundformationpg_url + '"><div>Fund Formation</div></a>');
+            $(".govtregulatorynav").html('<a href="' + govtregulatorypg_url + '"><div>Government &amp; Regulatory</div></a>');
+            $(".hospitalitynav").html('<a href="' + hospitalitypg_url + '"><div>Hospitality</div></a>');
+
+
+            $(".insolvencynav").html('<a href="' + insolvencypg_url + '"><div>Insolvency &amp; Restructuring</div></a>');
+            $(".insurancenav").html('<a href="' + insurancepg_url + '"><div>Insurance</div></a>');
+            $(".intellectualnav").html('<a href="' + intellectualpg_url + '"><div>Intellectual Property</div></a>');
+            $(".internationalnav").html('<a href="' + internationalpg_url + '"><div>International Practice Group</div></a>');
+            $(".litigationnav").html('<a href="' + litigationpg_url + '"><div>Dispute Resolution</div></a>');
+            $(".manufacturingnav").html('<a href="' + manufacturingpg_url + '"><div>Manufacturing</div></a>');
+            $(".mergersnav").html('<a href="' + mergerspg_url + '"><div>Mergers &amp; Acquisitions</div></a>');
+
+
+            $(".nuclearnav").html('<a href="' + nuclearpg_url + '"><div>Nuclear Law</div></a>');
+            $(".privateclientnav").html('<a href="' + privateclientpg_url + '"><div>Private Client</div></a>');
+            $(".privateequitynav").html('<a href="' + privateequitypg_url + '"><div>Private Equity, Venture Capital &amp; Fund Investment</div></a>');
+            $(".projectsnav").html('<a href="' + projectspg_url + '"><div>Projects &amp; Project Finance</div></a>');
+            $(".realestatenav").html('<a href="' + realestatepg_url + '"><div>Real Estate</div></a>');
+            $(".renewablenav").html('<a href="' + renewablepg_url + '"><div>Renewable Energy</div></a>');
+            $(".technologynav").html('<a href="' + technologypg_url + '"><div>Technology, Media &amp; Telecommunications</div></a>');
+
+				
+
+
+			$(".medianav").html('<a href="' + mediapg_url + '"><div>Media</div></a>');
+
+		}
+		else{
+
+			//alert(3);
+
+			$.cookie("disclaimer", "", {
+
+				expires: 1,
+
+				path: '/'
+
+			});
+
+			
+
+			$(".aboutnav").html('<a class="aboutnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>about</div></a>');
+
+			$(".recognav").html('<a class="recognav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>recognition</div></a>');
+
+			$(".peoplenav").html('<a class="peoplenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>People</div></a>');
+
+			$(".expertisenav").html('<a class="expertisenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Practice Areas</div></a>');
+
+
+            $(".automotivenav").html('<a class="automotivenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Automotive</div></a>');
+            $(".briberynav").html('<a class="briberynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Anti-Bribery &amp; Anti-Corruption</div></a>');
+            $(".bankingnav").html('<a class="bankingnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Banking &amp; Finance</div></a>');
+            $(".capitalnav").html('<a class="capitalnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Capital Markets &amp; International Offerings</div></a>');
+            $(".competitionnav").html('<a class="competitionnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Competition Law</div></a>');
+            $(".corporatenav").html('<a class="corporatenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Corporate &amp; Commercial</div></a>');
+            $(".directtaxnav").html('<a class="directtaxnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Tax</div></a>');
+    
+
+            $(".educationnav").html('<a class="educationnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Education</div></a>');
+            $(".employmentnav").html('<a class="employmentnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Employment Law</div></a>');
+            $(".energynav").html('<a class="energynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Energy, Infrastructure &amp; Natural Resources</div></a>');
+            $(".financialnav").html('<a class="financialnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Financial Services</div></a>');
+            $(".fundformationnav").html('<a class="fundformationnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Fund Formation</div></a>');
+            $(".govtregulatorynav").html('<a class="govtregulatorynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Government &amp; Regulatory</div></a>');
+            $(".hospitalitynav").html('<a class="hospitalitynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Hospitality</div></a>');
+    
+            
+            $(".insolvencynav").html('<a class="insolvencynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Insolvency &amp; Restructuring</div></a>');
+            $(".insurancenav").html('<a class="insurancenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Insurance</div></a>');
+            $(".intellectualnav").html('<a class="intellectualnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Intellectual Property</div></a>');
+            $(".internationalnav").html('<a class="internationalnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>International Practice Group</div></a>');
+            $(".litigationnav").html('<a class="litigationnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Dispute Resolution</div></a>');
+            $(".manufacturingnav").html('<a class="manufacturingnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Manufacturing</div></a>');
+            $(".mergersnav").html('<a class="mergersnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Mergers &amp; Acquisitions</div></a>');
+
+            $(".nuclearnav").html('<a class="nuclearnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Nuclear Law</div></a>');
+            $(".privateclientnav").html('<a class="privateclientnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Private Client</div></a>');
+            $(".privateequitynav").html('<a class="privateequitynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Private Equity, Venture Capital &amp; Fund Investment</div></a>');
+            $(".projectsnav").html('<a class="projectsnav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Projects &amp; Project Finance</div></a>');
+            $(".realestatenav").html('<a class="realestatenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Real Estate</div></a>');
+            $(".renewablenav").html('<a class="renewablenav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Renewable Energy</div></a>');
+            $(".technologynav").html('<a class="technologynav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Technology, Media &amp; Telecommunications</div></a>');
+    
+    
+
+			$(".medianav").html('<a class="medianav_a" href="#" data-toggle="modal" data-target="#disclaimer_popup"><div>Media</div></a>');
+
+		}
+
+	}
+
+	
+
+    
+
+	
+
+    $(".aboutnav_a").click(function() {
+
+        $("[name='agreeurl']").val(aboutpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + aboutpg_url + "');");
+
+    });
+
+    $(".recognav_a").click(function() {
+
+        $("[name='agreeurl']").val(recogpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + recogpg_url + "');");
+
+    });
+
+    $(".peoplenav_a").click(function() {
+
+        $("[name='agreeurl']").val(peoplepg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + peoplepg_url + "');");
+
+    });
+
+    $(".expertisenav_a").click(function() {
+
+        $("[name='agreeurl']").val(expertisepg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + expertisepg_url + "');");
+
+    });
+
+
+
+
+    $(".automotivenav_a").click(function() {
+
+        $("[name='agreeurl']").val(automotivepg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + automotivepg_url + "');");
+
+    });
+    $(".briberynav_a").click(function() {
+
+        $("[name='agreeurl']").val(briberypg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + briberypg_url + "');");
+
+    });
+    $(".bankingnav_a").click(function() {
+
+        $("[name='agreeurl']").val(bankingpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + bankingpg_url + "');");
+
+    });
+    $(".capitalnav_a").click(function() {
+
+        $("[name='agreeurl']").val(capitalpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + capitalpg_url + "');");
+
+    });
+    $(".competitionnav_a").click(function() {
+
+        $("[name='agreeurl']").val(competitionpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + competitionpg_url + "');");
+
+    });
+    $(".corporatenav_a").click(function() {
+
+        $("[name='agreeurl']").val(corporatepg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + corporatepg_url + "');");
+
+    });
+    $(".directtaxnav_a").click(function() {
+
+        $("[name='agreeurl']").val(directtaxpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + directtaxpg_url + "');");
+
+    });
+
+
+
+
+
+    $(".educationnav_a").click(function() {
+
+        $("[name='agreeurl']").val(educationpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + educationpg_url + "');");
+
+    });
+    $(".employmentnav_a").click(function() {
+
+        $("[name='agreeurl']").val(employmentpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + employmentpg_url + "');");
+
+    });
+    $(".energynav_a").click(function() {
+
+        $("[name='agreeurl']").val(energypg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + energypg_url + "');");
+
+    });
+    $(".financialnav_a").click(function() {
+
+        $("[name='agreeurl']").val(financialpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + financialpg_url + "');");
+
+    });
+    $(".fundformationnav_a").click(function() {
+
+        $("[name='agreeurl']").val(fundformationpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + fundformationpg_url + "');");
+
+    });
+    $(".govtregulatorynav_a").click(function() {
+
+        $("[name='agreeurl']").val(govtregulatorypg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + govtregulatorypg_url + "');");
+
+    });
+    $(".hospitalitynav_a").click(function() {
+
+        $("[name='agreeurl']").val(hospitalitypg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + hospitalitypg_url + "');");
+
+    });
+    
+
+
+    $(".insolvencynav_a").click(function() {
+
+        $("[name='agreeurl']").val(insolvencypg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + insolvencypg_url + "');");
+
+    });
+    $(".insurancenav_a").click(function() {
+
+        $("[name='agreeurl']").val(insurancepg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + insurancepg_url + "');");
+
+    });
+    $(".intellectualnav_a").click(function() {
+
+        $("[name='agreeurl']").val(intellectualpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + intellectualpg_url + "');");
+
+    });
+    $(".internationalnav_a").click(function() {
+
+        $("[name='agreeurl']").val(internationalpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + internationalpg_url + "');");
+
+    });
+    $(".litigationnav_a").click(function() {
+
+        $("[name='agreeurl']").val(litigationpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + litigationpg_url + "');");
+
+    });
+    $(".manufacturingnav_a").click(function() {
+
+        $("[name='agreeurl']").val(manufacturingpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + manufacturingpg_url + "');");
+
+    });
+    $(".mergersnav_a").click(function() {
+
+        $("[name='agreeurl']").val(mergerspg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + mergerspg_url + "');");
+
+    });
+
+
+
+    $(".nuclearnav_a").click(function() {
+
+        $("[name='agreeurl']").val(nuclearpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + nuclearpg_url + "');");
+
+    });
+    $(".privateclientnav_a").click(function() {
+
+        $("[name='agreeurl']").val(privateclientpg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + privateclientpg_url + "');");
+
+    });
+    $(".privateequitynav_a").click(function() {
+
+        $("[name='agreeurl']").val(privateequitypg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + privateequitypg_url + "');");
+
+    });
+    $(".projectsnav_a").click(function() {
+
+        $("[name='agreeurl']").val(projectspg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + projectspg_url + "');");
+
+    });
+    $(".realestatenav_a").click(function() {
+
+        $("[name='agreeurl']").val(realestatepg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + realestatepg_url + "');");
+
+    });
+    $(".renewablenav_a").click(function() {
+
+        $("[name='agreeurl']").val(renewablepg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + renewablepg_url + "');");
+
+    });
+    $(".technologynav_a").click(function() {
+
+        $("[name='agreeurl']").val(technologypg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + technologypg_url + "');");
+
+    });
+	$(".medianav_a").click(function() {
+
+        $("[name='agreeurl']").val(mediapg_url);
+
+        $(".agreebtn_modal").attr("onclick", "agree_disclaimer('" + mediapg_url + "');");
+
+    });
+
+});
+
+
+
+
+
+function agree_disclaimer(str) {}
+
+
+
+function onSubmit(token) {
+
+    response = grecaptcha.getResponse();
+
+    if (response.length == 0) {
+
+        $.cookie("disclaimer", "", {
+
+            expires: 1,
+
+            path: '/'
+
+        });
+
+    } else {		
+
+		$.cookie("disclaimer", "agree", {
+
+            expires: 1,
+            path: '/'
+
+        });
+       
+        window.location.reload(true);
+
+        /*
+        if($("[name='agreeurl']").val()=='https://induslaw.com/'){
+
+            window.location.reload(true);
+
+        }
+        else{
+
+            window.location = $("[name='agreeurl']").val();
+
+        }
+        */
+
+        
+
+    }
+
+}
+
+
+
+function open_termModal() {
+
+    setTimeout(function() {
+
+        $('#terms_popup').modal();
+
+    }, 500);
+
+}
