@@ -2507,7 +2507,7 @@ body{
 @media (max-width: 768px) {
   .mega_menu {
     width: 100%;
-    margin-left: -19.4rem !important;
+    margin-left: -19.4rem ;
   }
   .mega_menu ul li .sub_menu{
     width: 641px !important;
@@ -2539,7 +2539,25 @@ body{
 @media (max-width: 375px) {
   .mega_menu {
     width: 100%;
-    margin-left: -7.1rem !important;
+    margin-left: -7.1rem ;
+   
+  }
+  .mega_menu ul li .sub_menu{
+    display: block;
+    width: 222px !important;
+    top: 43px;
+    height: auto;
+  }
+  .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+   overflow: auto;
+}
+
+}
+@media (max-width: 425px) {
+  .mega_menu {
+    width: 100%;
+    float: left;
+    margin-left: -8.6rem ;
    
   }
   .mega_menu ul li .sub_menu{
