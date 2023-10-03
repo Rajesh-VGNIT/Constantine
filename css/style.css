@@ -2522,7 +2522,7 @@ body{
 @media (max-width: 320px) {
   .mega_menu {
     width: 100%;
-    margin-left: -5.4rem !important;
+    margin-left: -5.4rem ;
    
   }
   .mega_menu ul li .sub_menu{
@@ -2539,7 +2539,7 @@ body{
 @media (max-width: 375px) {
   .mega_menu {
     width: 100%;
-    margin-left: -7.1rem ;
+    margin-left: -7.1rem !important;
    
   }
   .mega_menu ul li .sub_menu{
