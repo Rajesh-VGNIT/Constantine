@@ -489,7 +489,7 @@ ul{
   padding: 90px 0;
   text-align: center;
   /* background: var(--primary); */
-  background: url(/img/carousel-11.jpg);
+  background: url(../img/carousel-11.jpg);
   opacity: 1;
   background-repeat: no-repeat;
   background-clip: var(--secondary);
@@ -2457,9 +2457,9 @@ body{
 	visibility: hidden;
 	line-height: 24px;
 }
-.mega_menu ul li:hover{
+/* .mega_menu ul li:hover{
 	background: #2c2c2c;
-}
+} */
 
 .mega_menu ul li:hover a{
 	color: #333;
@@ -2571,4 +2571,5 @@ body{
 }
 
 }
+
 
